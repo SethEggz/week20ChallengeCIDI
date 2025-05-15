@@ -1,4 +1,7 @@
 import Quiz from "../../client/src/components/Quiz"
+import { mount } from 'cypress/react' // or '@cypress/react' if that's your setup
+
+Cypress.Commands.add('mount', mount)
 
 describe('Quiz Component', () => {
   beforeEach(() => {
